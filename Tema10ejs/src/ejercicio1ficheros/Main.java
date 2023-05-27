@@ -8,12 +8,11 @@ public class Main {
 
 
 	    public static void main(String[] args) {
-	        String archivo = "NumerosReales.txt";
 
 	        double suma = 0.0;
 	        int contador = 0;
 
-	        try (BufferedReader br = new BufferedReader(new FileReader(archivo))) {
+	        try (BufferedReader br = new BufferedReader(new FileReader("src\\ejercicio1ficheros\\NumerosReales"))) {
 	            String linea;
 	            while ((linea = br.readLine()) != null) {
 	                String[] numeros = linea.split(" ");

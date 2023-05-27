@@ -1,4 +1,5 @@
 package ejercicio6ficheros;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
@@ -9,9 +10,9 @@ import java.util.Collections;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-        List<Integer> numeros = new ArrayList<>();
+        ArrayList<Integer> numeros = new ArrayList<>();
 
         // Leer los números del archivo y almacenarlos en la lista
         try (BufferedReader br = new BufferedReader(new FileReader("src\\ejercicio6ficheros\\asciendenumeros"))) {
@@ -41,8 +42,5 @@ public class Main {
         
         System.out.println("Números ordenados guardados en el archivo " + );
     }
-	
-	
-	
-	
+
 }

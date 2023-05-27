@@ -11,7 +11,7 @@ public class Main {
 		int sumaEdades = 0;
 		double sumaEstaturas = 0.0;
 	
-		try (BufferedReader br = new BufferedReader(new FileReader(archivo))) {
+		try (BufferedReader br = new BufferedReader(new FileReader("src\\ejercicio3ficheros\\Alumnos"))) {
 	            String linea;
 	            while ((linea = br.readLine()) != null) {
 	                String[] datos = linea.split(" ");
